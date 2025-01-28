@@ -83,7 +83,6 @@ class AuthenticateController extends Controller
         $credential = $request->only('email', 'password');
         try {
             $user_auxin= users::where('email', $request->email)->first();
-            dd($user_auxin);return;
             //$user_rolin= $this->pre->getPreRegistro($user_auxin->id);
             $customClaims = ['rol' => $user_auxin->idRolesUser];
         //verifique las credenciales y cree un token para el usuario
