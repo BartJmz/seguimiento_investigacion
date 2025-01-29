@@ -134,7 +134,7 @@ class FatigaController extends Controller
             persona.nombrePersona,
             persona.apPat,
             persona.apMat,
-            personalaei.id idpersona   ,
+            personalaei.cuip,
             @estatus = 1 as estado, 
             @iddetallefatigas   as  iddetallefatigas,
             @idComanciaServicioFK as  idComanciaServicioFK,
